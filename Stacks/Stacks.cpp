@@ -11,9 +11,18 @@ int main()
 
     stack->Push(5);
     stack->Push(3);
-//    stack->Push(2);
-
+    stack->Push(2);
     stack->Print();
+
+    int value;
+    stack->Pop(&value);
+    cout << value << endl;
+    stack->Print();
+
+    stack->MakeEmpty();
+    cout << "Make Empty" << endl;
+    stack->Print();
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
